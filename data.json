@@ -1,0 +1,141 @@
+{
+	"projects": [
+		{
+			"id": 0,
+			"project_name": "Random Quote Generator",
+			"description": "Displays a new random quote each time a button is clicked",
+			"technologies": ["HTML", "CSS", "JavaScript"],
+			"live_link": "https://markjwood.github.io/random-quote-generator/",
+			"github_link": "https://github.com/markjwood/random-quote-generator",
+			"images": [
+				{
+					"image_url": "/images/unit-1_screenshot-main.png",
+					"image_alt": "Screenshot from the Random Quote Generator showing a Hunter S. Thompson quote on a green background"
+				},
+				{
+					"image_url": "/images/unit-1_screenshot-1.png",
+					"image_alt": "Screenshot from the Random Quote Generator showing a Carl Sagan quote on a light green background"
+				},
+				{
+					"image_url": "/images/unit-1_screenshot-2.png",
+					"image_alt": "Screenshot from the Random Quote Generator showing an Isaac Newton quote on a yellow background"
+				},
+				{
+					"image_url": "/images/unit-1_screenshot-3.png",
+					"image_alt": "Screenshot from the Random Quote Generator showing a Mark Twain quote on a blue background"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"project_name": "Data Pagination Project",
+			"description": "Displays a searchable, paginated list of students",
+			"technologies": ["HTML", "CSS", "JavaScript"],
+			"live_link": "https://markjwood.github.io/data-pagination-project/",
+			"github_link": "https://github.com/markjwood/data-pagination-project",
+			"images": [
+				{
+					"image_url": "/images/unit-2_screenshot-main.png",
+					"image_alt": "Screenshot of student list on a smaller screen"
+				},
+				{
+					"image_url": "/images/unit-2_screenshot-1.png",
+					"image_alt": "Screenshot of student list on a desktop screen"
+				},
+				{
+					"image_url": "/images/unit-2_screenshot-2.png",
+					"image_alt": "Screenshot of student list on a desktop screen, with paging buttons at bottom of screen"
+				},
+				{
+					"image_url": "/images/unit-2_screenshot-3.png",
+					"image_alt": "Screenshot of student list on a desktop screen, with paging buttons at bottom of screen (last page)"
+				},
+				{
+					"image_url": "/images/unit-2_screenshot-search.png",
+					"image_alt": "Screenshot of student list on a smaller screen, showing search functionality with 'be' typed into search bar"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"project_name": "Interactive Form",
+			"description": "A registration form with real-time validation",
+			"technologies": ["HTML", "CSS", "JavaScript", "Form validation"],
+			"live_link": "https://markjwood.github.io/interactive-form-project/",
+			"github_link": "https://github.com/markjwood/interactive-form-project",
+			"images": [
+				{
+					"image_url": "/images/unit-3_screenshot-main.png",
+					"image_alt": "Screenshot of Full Stack Conference registration page, showing real-time validation of 'name' and 'email' entry"
+				},
+				{
+					"image_url": "/images/unit-3_screenshot-1.png",
+					"image_alt": "Screenshot of Full Stack Conference registration page, showing failed validation of 'name' entry"
+				},
+				{
+					"image_url": "/images/unit-3_screenshot-2.png",
+					"image_alt": "Screenshot of Full Stack Conference registration page, showing real-time validation of 'name' and failed 'email' entry"
+				},
+				{
+					"image_url": "/images/unit-3_screenshot-3.png",
+					"image_alt": "Screenshot of Full Stack Conference registration page, showing options disabled due to overlapping times"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"project_name": "OOP Game",
+			"description": "A phrase hunter game using object-oriented programming",
+			"technologies": [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Object-oriented programming (OOP)"
+			],
+			"live_link": "https://markjwood.github.io/oop-game-show-app/",
+			"github_link": "https://github.com/markjwood/oop-game-show-app",
+			"images": [
+				{
+					"image_url": "/images/unit-4_screenshot-main.png",
+					"image_alt": "Screenshot of Phrase Hunter game with phrase partially solved, showing disabled letters and two guesses remaining"
+				},
+				{
+					"image_url": "/images/unit-4_screenshot-start.png",
+					"image_alt": "Screenshot of Phrase Hunter 'Start Game' screen"
+				},
+				{
+					"image_url": "/images/unit-4_screenshot-won.png",
+					"image_alt": "Screenshot of Phrase Hunter 'You Won' screen"
+				},
+				{
+					"image_url": "/images/unit-4_screenshot-lost.png",
+					"image_alt": "Screenshot of Phrase Hunter 'You lost' screen"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"project_name": "Public API Request",
+			"description": "A searchable employee directory to demonstrate an understanding of using public APIs, making API requests, and handling data asynchronously",
+			"technologies": [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Asynchronous data",
+				"Public APIs"
+			],
+			"live_link": "https://markjwood.github.io/public-api-request/",
+			"github_link": "https://github.com/markjwood/public-api-request",
+			"images": [
+				{
+					"image_url": "/images/unit-5_screenshot-main.png",
+					"image_alt": "Screenshot of a searchable employee directory showing 12 'employees' sourced from a public API"
+				},
+				{
+					"image_url": "/images/unit-5_screenshot-search.png",
+					"image_alt": "Screenshot of employee directory showing search function with 'ton' entered into search bar and three matching 'employees'"
+				}
+			]
+		}
+	]
+}
