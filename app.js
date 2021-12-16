@@ -15,25 +15,37 @@ app.get('/about', (req, res) => {
 	res.render('about');
 });
 
-app.get('/projects/:id', (req, res) => {
-	res.render('project', { project: data.projects[req.params.id] });
+app.get('/projects/:id', (req, res, next) => {
+	// throw new Error(); //for testing
+	const id = req.params.id;
+	if (!data.projects[id]) {
+		const err = new Error("That project doesn't exist");
+		err.status = 404;
+		next(err);
+	}
+	res.render('project', { project: data.projects[id] });
 });
 
 app.use((req, res, next) => {
 	const err = new Error("That page doesn't exist");
 	err.status = 404;
-	console.log(err.message + ` (${err.status})`);
 	next(err);
 });
 
 app.use((err, req, res, next) => {
-	res.locals.error = err;
-	res.status(err.status);
+	err.status = err.status || 500;
+	err.message = err.message || 'Something went wrong!';
+
 	// TODO: custom 404 page
 	/*
-	if (res.status === 404) res.render('not-found');
+	if (err.status === 404) res.render('not-found');
 	*/
-	res.render('error');
+
+	res.locals.error = err;
+	res.status(err.status);
+	res.render('error', err);
+
+	console.error(err.message + ` (${err.status})`);
 });
 
 app.listen(port, () => {
