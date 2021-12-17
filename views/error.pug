@@ -3,5 +3,7 @@ extends layout.pug
 block content
   .error
     h2 Oops... Something's wrong here 
-    p #{error.message} (#{error.status})
+    h3 #{error.message} (#{error.status})
+    hr
+    p The text below probably doesn't mean anything to you unless you're a developer. You can ignore it.
     pre= error.stack
