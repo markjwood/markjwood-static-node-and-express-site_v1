@@ -76,6 +76,10 @@ a {
 	justify-content: space-between;
 }
 
+.italic {
+	font-style: italic;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

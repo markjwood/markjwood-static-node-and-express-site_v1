@@ -16,7 +16,6 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/projects/:id', (req, res, next) => {
-	// throw new Error(); //for testing
 	const id = req.params.id;
 	if (!data.projects[id]) {
 		const err = new Error("That project doesn't exist");
@@ -36,7 +35,7 @@ app.use((err, req, res, next) => {
 	err.status = err.status || 500;
 	err.message = err.message || 'Something went wrong!';
 
-	// TODO: custom 404 page
+	// TODO: 404 page
 	/*
 	if (err.status === 404) res.render('not-found');
 	*/
