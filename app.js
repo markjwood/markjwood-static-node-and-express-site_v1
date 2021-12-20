@@ -35,16 +35,18 @@ app.use((err, req, res, next) => {
 	err.status = err.status || 500;
 	err.message = err.message || 'Something went wrong!';
 
-	// TODO: 404 page
-	/*
-	if (err.status === 404) res.render('not-found');
-	*/
-
 	res.locals.error = err;
 	res.status(err.status);
-	res.render('error', err);
 
 	console.error(err.message + ` (${err.status})`);
+
+	// 404 page
+	if (err.status === 404) {
+		res.render('page-not-found');
+	} else {
+		// default error page
+		res.render('error', err);
+	}
 });
 
 app.listen(port, () => {
