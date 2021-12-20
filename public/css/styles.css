@@ -319,6 +319,10 @@ nav a span {
 	background-color: hsl(210 10% 85%);
 }
 
+.error > * {
+	font-family: 'Roboto Mono', monospace;
+}
+
 .error > h2 {
 	font-size: 1.75rem;
 	margin-block: 0 1.5em;
@@ -334,6 +338,45 @@ nav a span {
 	border-radius: 5px;
 	padding: 0.25em;
 	overflow-x: auto;
+}
+
+.error a {
+	color: inherit;
+	text-decoration: underline;
+	transition: opacity 200ms;
+}
+
+.error a:hover {
+	opacity: 0.6;
+}
+
+.four-oh-four {
+	text-align: center;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.four-oh-four > * {
+	color: #000;
+	margin: 0 auto;
+}
+
+.four-oh-four > * + * {
+	margin-top: 0.75em;
+}
+
+.four-oh-four h1 {
+	color: hsl(210 10% 30% / 0.8);
+	font-size: 6rem;
+	letter-spacing: 0.1em;
+}
+
+.four-oh-four > p {
+	font-size: 1.25rem;
+	max-width: 30em;
+	padding-inline: 1em;
 }
 
 /* 
