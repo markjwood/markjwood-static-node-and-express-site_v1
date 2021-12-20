@@ -20,13 +20,10 @@ block content
           each tech in project.technologies
             li= tech
 
-        //- Add the href values to the links below
         a.btn-link(href=project.live_link, target="live") Live Demo
         a.btn-link(href=project.github_link, target="social") GitHub Repo
 
     .project-img-box.box
-
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
 
       each image in project.images
         img.project-img(src=image.image_url, alt=image.image_alt)
