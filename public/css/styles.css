@@ -266,9 +266,12 @@ nav a span {
 	min-width: 100px;
 	border: 4px solid #fff;
 	box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+
+	/* added transition effect */
 	transition: transform 300ms ease-out;
 }
 
+/* image thumbnails grow on :hover */
 .cell a > img:hover {
 	transform: scale(1.1);
 }
@@ -383,6 +386,10 @@ nav a span {
 /* 
 	logo 
 */
+img {
+	max-width: 100%;
+}
+
 .sidebar-info-box .logo {
 	margin-bottom: 2em;
 }
