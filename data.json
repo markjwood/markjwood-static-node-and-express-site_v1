@@ -4,7 +4,7 @@
 			"id": 0,
 			"project_name": "Random Quote Generator",
 			"description": "Displays a new random quote each time a button is clicked",
-			"technologies": ["HTML", "CSS", "JavaScript"],
+			"technologies": ["HTML", "CSS", "JavaScript", "Responsive design"],
 			"live_link": "https://markjwood.github.io/random-quote-generator/",
 			"github_link": "https://github.com/markjwood/random-quote-generator",
 			"images": [
@@ -30,7 +30,7 @@
 			"id": 1,
 			"project_name": "Data Pagination Project",
 			"description": "Displays a searchable, paginated list of students",
-			"technologies": ["HTML", "CSS", "JavaScript"],
+			"technologies": ["HTML", "CSS", "JavaScript", "Responsive design"],
 			"live_link": "https://markjwood.github.io/data-pagination-project/",
 			"github_link": "https://github.com/markjwood/data-pagination-project",
 			"images": [
@@ -60,7 +60,13 @@
 			"id": 2,
 			"project_name": "Interactive Form",
 			"description": "A registration form with real-time validation",
-			"technologies": ["HTML", "CSS", "JavaScript", "Form validation"],
+			"technologies": [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Responsive design",
+				"Form validation"
+			],
 			"live_link": "https://markjwood.github.io/interactive-form-project/",
 			"github_link": "https://github.com/markjwood/interactive-form-project",
 			"images": [
