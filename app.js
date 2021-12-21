@@ -17,12 +17,13 @@ app.get('/about', (req, res) => {
 
 app.get('/projects/:id', (req, res, next) => {
 	const id = req.params.id;
-	if (!data.projects[id]) {
+	if (data.projects[id]) {
+		res.render('project', { project: data.projects[id] });
+	} else {
 		const err = new Error("That project doesn't exist");
 		err.status = 404;
 		next(err);
 	}
-	res.render('project', { project: data.projects[id] });
 });
 
 app.use((req, res, next) => {
