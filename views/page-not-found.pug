@@ -3,6 +3,7 @@ extends layout.pug
 block content
   .error.four-oh-four
     h1 4#[i.fas.fa-question-circle]4
+    p.error-info #{error.message} (#{error.status})
     p I can't find the page you're looking for.
     p Maybe it moved? Maybe it's self-isolating? Maybe it never existed?
     p Let's go back #[a(href="/") home] and try again.
