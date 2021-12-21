@@ -333,7 +333,8 @@ nav a span {
 	color: hsl(210 10% 30%);
 }
 
-.error > pre {
+.error > .error-info {
+	width: 100%;
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 0.25em;
@@ -377,6 +378,13 @@ nav a span {
 	font-size: 1.25rem;
 	max-width: 30em;
 	padding-inline: 1em;
+}
+
+/* 
+	logo 
+*/
+.sidebar-info-box .logo {
+	margin-bottom: 2em;
 }
 
 /* 
