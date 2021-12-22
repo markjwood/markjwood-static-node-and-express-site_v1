@@ -1,3 +1,11 @@
+/* 
+	custom properties
+*/
+:root {
+	/* color */
+	--hsl-highlight: 246 73% 59%;
+}
+
 /*
   Main styles
 */
@@ -271,8 +279,9 @@ nav a span {
 	transition: transform 300ms ease-out;
 }
 
-/* image thumbnails grow on :hover */
-.cell a > img:hover {
+/* image thumbnails grow on :hover & :focus */
+.cell a > img:hover,
+.cell a > img:focus {
 	transform: scale(1.1);
 }
 
@@ -309,8 +318,17 @@ nav a span {
 	max-width: 255px;
 	margin: auto 0 5px 0;
 	padding: 0.85em 1em;
-	background-color: #333;
-	border: 1px solid transparent;
+	background-color: hsl(var(--hsl-highlight) / var(--alpha, 1));
+	border: 2px solid hsl(var(--hsl-highlight) / var(--border-alpha, 0.1));
+
+	/* added transition */
+	transition: background 200ms ease-out, border 200ms ease-out;
+}
+
+/* added hover effect */
+.btn-link:hover {
+	--alpha: 0.6;
+	--border-alpha: 1;
 }
 
 /* 
