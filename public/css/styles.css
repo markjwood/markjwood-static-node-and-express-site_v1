@@ -4,6 +4,8 @@
 :root {
 	/* color */
 	--hsl-highlight: 246 73% 59%;
+	--clr-bg-highlight: hsl(var(--hsl-highlight) / var(--alpha, 0.3));
+	--clr-txt-dark: hsl(246 73% 25%);
 }
 
 /*
@@ -29,7 +31,8 @@ body {
 	line-height: 1.5;
 	color: #0a0a0a;
 	background: #fefefe;
-	background: #000;
+	/* background: #000; */
+	background-color: var(--clr-bg-highlight);
 	transform: translateX(0px);
 	transition: all 0.4s ease-out;
 }
@@ -152,7 +155,8 @@ nav a span {
 	height: 100%;
 	min-height: 100%;
 	padding: 20px;
-	background: #000;
+	/* background: #000; */
+	background-color: transparent;
 }
 
 .sidebar-info-box {
@@ -182,7 +186,8 @@ nav a span {
 	text-rendering: optimizeLegibility;
 	line-height: 1.6;
 	font-size: 14px;
-	color: #999;
+	/* color: #999; */
+	color: var(--clr-txt-dark);
 }
 
 .sidebar a {
