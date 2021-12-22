@@ -417,6 +417,17 @@ img {
 	margin-bottom: 2em;
 }
 
+/* prevent logo from expanding outside header */
+.header-info-box {
+	height: 100%;
+
+	/* prevent collapsing margin */
+	display: flex;
+}
+.header-info-box .logo {
+	max-height: 100%;
+}
+
 /* 
   Tablet layout styles 
 */
